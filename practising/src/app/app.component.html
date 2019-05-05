@@ -1,0 +1,6 @@
+<button (click)="togglePassword()">Display Details</button>
+<p *ngIf="showPassword">Secret Password = 'tuna'</p>
+<p *ngFor="let click of buttonClicks" 
+[ngStyle]="{backgroundColor: click > 5 ? 'blue' : 'white'}"
+[ngClass]="{white: click >5}">
+{{click}}</p>
