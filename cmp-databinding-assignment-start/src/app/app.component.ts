@@ -15,5 +15,5 @@ evenNumbers: number[] = [];
     } else {
       this.oddNumbers.push(number);
     }
-  } 
+  }  
 }
