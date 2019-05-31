@@ -1,0 +1,6 @@
+ul {
+    display: none;
+}
+div.btn-group.open ul {
+    display:block;
+}
