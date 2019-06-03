@@ -1,7 +1,7 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { CounterService } from './shared/counter.service';
 import { UsersService } from './shared/users.service';
-@Injectable()
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
