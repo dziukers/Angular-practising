@@ -1,6 +1,7 @@
 import { Injectable, ViewChild } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.model';
 import { Subject } from 'rxjs';
+import { __spread } from 'tslib';
 
 @Injectable({ providedIn: 'root' })
 
@@ -34,7 +35,8 @@ export class ShoppingListService {
         this.ingredientsChanged.next(this.ingredients.slice())
     }
 
-    deleteIngredient(id: number) {
-        this.ingredients.splice(id, 1);
+    deleteIngredient(index: number) {
+        this.ingredients.splice(index, 1);
+        this.ingredientsChanged.next(this.ingredients.slice())
     }
 }
